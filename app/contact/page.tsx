@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
+import LegacyPortalNotice from "@/components/sections/LegacyPortalNotice";
 import LinkedinIcon from "@/components/icons/LinkedinIcon";
 import { contactContent, siteConfig } from "@/lib/data";
 import { Mail, MapPin, Send, ArrowUpRight } from "lucide-react";
@@ -39,6 +40,12 @@ export default function ContactPage() {
           </p>
         </div>
       </section>
+
+      <LegacyPortalNotice
+        message="Need operational support? Most requests now move faster through People Portal workflows and policy pages."
+        href="/policies-benefits"
+        cta="Open Policies & Benefits"
+      />
 
       <section className="py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

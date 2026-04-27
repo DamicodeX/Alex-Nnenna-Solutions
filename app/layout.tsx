@@ -1,45 +1,43 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Fraunces, Manrope } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/sections/Footer";
 
-const playfairDisplayHeading = Playfair_Display({
+const frauncesHeading = Fraunces({
   subsets: ["latin"],
   variable: "--font-heading",
 });
 
-const inter = Inter({
+const manrope = Manrope({
   subsets: ["latin"],
   variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
   title: {
-    default:
-      "Alexnnenna Solutions LTD | Strategic Governance & Human Capacity Consultant",
-    template: "%s | Alexnnenna Solutions",
+    default: "HR Portal | HR Self-Service Hub",
+    template: "%s | Alexnnenna HR Portal",
   },
   description:
-    "Senior Lecturer and Consultant specializing in Peace, Security, and Human Capacity Development. Bridging academic excellence with institutional growth.",
+    "A modern workplace hub for onboarding, policy access, employee directory search, forms, and company events.",
   keywords: [
-    "Business Consulting",
-    "Peace and Conflict Resolution",
-    "Governance Research",
-    "Human Capacity Development",
-    "Lagos Consultant",
-    "Mountain Top University",
+    "HR Portal",
+    "Onboarding",
+    "Employee Directory",
+    "Policies and Benefits",
+    "People Operations",
+    "Internal Forms",
   ],
   openGraph: {
     type: "website",
-    locale: "en_NG",
-    siteName: "Alexnnenna Solutions Nig. Ltd",
-    title:
-      "Alexnnenna Solutions LTD | Strategic Governance & Human Capacity Consultant",
+    locale: "en_GB",
+    siteName: "HR Portal",
+    title: "HR Portal | HR Self-Service Hub",
     description:
-      "Bridging academic excellence with institutional growth through expert consulting in Peace, Security, and Human Capacity Development.",
+      "One place for onboarding, forms, policy documents, workforce updates, and employee support.",
   },
 };
 
@@ -54,8 +52,8 @@ export default function RootLayout({
       className={cn(
         "h-full",
         "antialiased",
-        inter.variable,
-        playfairDisplayHeading.variable
+        manrope.variable,
+        frauncesHeading.variable
       )}
       suppressHydrationWarning
     >

@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
+import LegacyPortalNotice from "@/components/sections/LegacyPortalNotice";
 import PublicationAccordion from "@/components/sections/PublicationAccordion";
 import { publications, speakingEngagements, portfolioContent } from "@/lib/data";
 import { BookOpen, Mic, Award, MapPin } from "lucide-react";
@@ -26,6 +27,12 @@ export default function PortfolioPage() {
           </p>
         </div>
       </section>
+
+      <LegacyPortalNotice
+        message="This legacy research portfolio is preserved for reference. The main employee journey now starts in the People Portal home."
+        href="/"
+        cta="Return to Portal Home"
+      />
 
       <section className="py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

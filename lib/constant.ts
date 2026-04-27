@@ -4,19 +4,23 @@ export const navItems = [
     href: "/",
   },
   {
-    name: "About",
+    name: "Onboarding",
+    href: "/onboarding",
+  },
+  {
+    name: "Policies & Benefits",
+    href: "/policies-benefits",
+  },
+  {
+    name: "Directory",
     href: "/about",
   },
-  {
-    name: "Services",
-    href: "/services",
-  },
   // {
-  //   name: "Portfolio",
-  //   href: "/portfolio",
+  //   name: "Forms",
+  //   href: "/forms",
   // },
   {
-    name: "Contact",
-    href: "/contact",
+    name: "News & Events",
+    href: "/news",
   },
 ];

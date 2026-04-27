@@ -2,7 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
+import LegacyPortalNotice from "@/components/sections/LegacyPortalNotice";
 import ServiceCard from "@/components/sections/ServiceCard";
 import { services } from "@/lib/data";
 import {
@@ -44,6 +44,12 @@ export default function ServicesPage() {
           </p>
         </div>
       </section>
+
+      <LegacyPortalNotice
+        message="This page remains available for historical context. For active employee workflows, use the HR portal forms, policies, and onboarding sections."
+        href="/forms"
+        cta="Go to Self-Service Forms"
+      />
 
       {/* Services Grid */}
       <section className="py-16 md:py-24">

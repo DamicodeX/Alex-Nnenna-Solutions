@@ -14,7 +14,7 @@ export default function AboutPage() {
   return (
     <main className="min-h-screen bg-background">
       {/* Page Header */}
-      <section className="border-b border-border">
+      {/* <section className="border-b border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 text-center">
           <Badge variant="secondary" className="mb-4">
             About Us
@@ -23,7 +23,13 @@ export default function AboutPage() {
             {aboutContent2.company.tagline}
           </h1>
         </div>
-      </section>
+      </section> */}
+
+      {/* <LegacyPortalNotice
+        message="Looking for day-to-day HR tasks? The new People Portal is now the primary destination for onboarding, policies, forms, and events."
+        href="/"
+        cta="Open People Portal"
+      /> */}
 
       {/* Company Overview */}
       <section className="py-16 md:py-24">
@@ -133,6 +139,47 @@ export default function AboutPage() {
               <p className="font-(family-name:--font-heading) text-lg italic text-foreground">
                 {aboutContent2.founder.signature}
               </p>
+            </div>
+          </div>
+
+          <div className="mt-14 border-t border-border/70 pt-14">
+            <div className="grid md:grid-cols-5 gap-12 md:gap-16 items-start">
+              <div className="md:col-span-3 space-y-6 order-2 md:order-1">
+                <div>
+                  <h3 className="font-(family-name:--font-heading) text-3xl font-bold tracking-tight text-foreground">
+                    {aboutContent2.coLeader.name}
+                  </h3>
+                  <p className="mt-2 text-xs tracking-widest uppercase font-semibold text-primary">
+                    {aboutContent2.coLeader.title}
+                  </p>
+                </div>
+
+                <p className="text-base leading-relaxed text-muted-foreground">
+                  {aboutContent2.coLeader.bio}
+                </p>
+                <p className="text-base leading-relaxed text-muted-foreground">
+                  {aboutContent2.coLeader.profile}
+                </p>
+
+                <p className="font-(family-name:--font-heading) text-lg italic text-foreground">
+                  {aboutContent2.coLeader.signature}
+                </p>
+              </div>
+
+              <div className="md:col-span-2 order-1 md:order-2">
+                <div className="relative">
+                  <div className="absolute -inset-3 border border-primary/20" />
+                  <Image
+                    src={aboutContent2.coLeader.image}
+                    alt={`${aboutContent2.coLeader.name} — ${aboutContent2.coLeader.title}`}
+                    width={400}
+                    height={400}
+                    quality={100}
+                    sizes="(max-width: 768px) 80vw, 360px"
+                    className="relative w-full max-w-90 mx-auto object-cover aspect-square"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>

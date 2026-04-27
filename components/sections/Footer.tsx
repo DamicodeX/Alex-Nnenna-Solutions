@@ -2,18 +2,17 @@ import React from "react";
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
 import LinkedinIcon from "@/components/icons/LinkedinIcon";
-import { siteConfig, contactContent } from "@/lib/data";
+import { navItems } from "@/lib/constant";
+import { portalSupport, siteConfig } from "@/lib/data";
 import { Mail, MapPin, ArrowUpRight } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="dark border-t border-border bg-background text-foreground">
+    <footer className="border-t border-border bg-secondary text-foreground">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Main footer content */}
-        <div className="py-16 grid md:grid-cols-3 gap-12">
-          {/* Brand */}
+        <div className="grid gap-12 py-16 md:grid-cols-3">
           <div className="space-y-4">
             <h3 className="font-(family-name:--font-heading) text-lg font-bold">
               {siteConfig.name}
@@ -21,9 +20,11 @@ const Footer = () => {
             <p className="text-sm text-muted-foreground leading-relaxed max-w-sm">
               {siteConfig.description}
             </p>
+            <p className="text-xs uppercase tracking-widest text-muted-foreground">
+              People Support Desk
+            </p>
           </div>
 
-          {/* Quick Links */}
           <div className="space-y-4">
             <p className="text-xs tracking-widest uppercase font-semibold text-muted-foreground">
               Navigation
@@ -32,13 +33,7 @@ const Footer = () => {
               className="flex flex-col space-y-2"
               aria-label="Footer navigation"
             >
-              {[
-                { name: "Home", href: "/" },
-                { name: "About", href: "/about" },
-                { name: "Services", href: "/services" },
-                { name: "Portfolio", href: "/portfolio" },
-                { name: "Contact", href: "/contact" },
-              ].map((link) => (
+              {navItems.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
@@ -47,25 +42,30 @@ const Footer = () => {
                   {link.name}
                 </Link>
               ))}
+              <Link
+                href="/contact"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 w-fit"
+              >
+                HR Contact
+              </Link>
             </nav>
           </div>
 
-          {/* Contact Info */}
           <div className="space-y-4">
             <p className="text-xs tracking-widest uppercase font-semibold text-muted-foreground">
-              Get in Touch
+              Support
             </p>
             <div className="space-y-3">
               <a
-                href={`mailto:${contactContent.email}`}
+                href={`mailto:${portalSupport.email}`}
                 className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
               >
                 <Mail className="size-4" />
-                {contactContent.email}
+                {portalSupport.email}
               </a>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <MapPin className="size-4" />
-                {contactContent.location}
+                {portalSupport.location}
               </div>
               <a
                 href={siteConfig.links.linkedin}
@@ -81,14 +81,13 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom bar */}
         <Separator />
         <div className="py-6 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-xs text-muted-foreground">
             © {currentYear} {siteConfig.name}. All rights reserved.
           </p>
           <p className="text-xs text-muted-foreground">
-            Strategic Governance & Human Capacity Consulting
+            Built for onboarding, policies, and employee self-service.
           </p>
         </div>
       </div>
