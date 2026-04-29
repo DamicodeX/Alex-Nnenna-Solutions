@@ -21,7 +21,7 @@ const Footer = () => {
               {siteConfig.description}
             </p>
             <p className="text-xs uppercase tracking-widest text-muted-foreground">
-              People Support Desk
+              HR Portal 
             </p>
           </div>
 

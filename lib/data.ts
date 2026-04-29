@@ -637,8 +637,8 @@ export const eventItems: EventItem[] = [
 ];
 
 export const portalSupport = {
-  email: "peopleops@alexnnenna-portal.com",
-  location: "People Operations Desk, Lagos HQ",
+  email: "Alexnnennasolutionnigltd@gmail.com",
+  location: "15, Malcolm Rd, East Croydon,United Kingdom ",
   phone: "+44 7790467648",
 };
 
@@ -902,7 +902,7 @@ export const aboutContent2 = {
     title: "Founder & Lead Consultant",
     bio: "ALEXNNENNA SOLUTIONS was pioneered by Dr. Alexander Attah, a distinguished scholar and strategist with over a decade of experience in Nigeria’s higher education and governance systems. As a Senior Lecturer in Peace, Security and Humanitarian Studies, Dr. Attah has dedicated his career to advancing peacebuilding scholarship and mentoring emerging leaders.",
     academicPedigree: "He holds a PhD and a Master’s degree (Distinction) in Peace and Conflict Studies from the University of Ibadan. Currently serving as the Director of the Centre for Advancement and Internationalisation at Mountain Top University, his leadership continues to drive global academic partnerships and institutional visibility.",
-    signature: "Dr. Alexander Attah, PhD",
+    signature: "Dr. Alexander Attah",
     image: "/alex image.jpg", 
   },
 
