@@ -1,6 +1,6 @@
 "use client";
 
-import { Landmark, ShieldCheck, Users } from "lucide-react";
+import { Landmark, Laptop, ShieldCheck, Users } from "lucide-react";
 import { motion } from "motion/react";
 import { corePillars } from "@/lib/data";
 import {
@@ -15,6 +15,7 @@ const iconMap = {
   Users,
   ShieldCheck,
   Landmark,
+  Laptop,
 } as const;
 
 const CorePillars = () => {

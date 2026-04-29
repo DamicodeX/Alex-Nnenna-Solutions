@@ -2,7 +2,7 @@ import { siteConfig } from '@/lib/data';
 import Link from 'next/link';
 import { navItems } from '@/lib/constant';
 import { alexSupport } from '@/lib/data';
-import { ArrowUpRight, MapPin } from 'lucide-react';
+import { ArrowUpRight, Mail, MapPin, Phone } from 'lucide-react';
 import LinkedinIcon from './icons/Linkedinicon';
 import { Separator } from './ui/separator';
 
@@ -27,9 +27,9 @@ const Footer = () => {
                     </div>
 
                     <div className="space-y-4">
-                        <p className="text-xs tracking-widest uppercase font-semibold text-muted-foreground">
+                        {/* <p className="text-xs tracking-widest uppercase font-semibold text-muted-foreground">
                             Navigation
-                        </p>
+                        </p> */}
                         <nav
                             className="flex flex-col space-y-2"
                             aria-label="Footer navigation"
@@ -43,12 +43,12 @@ const Footer = () => {
                                     {link.name}
                                 </Link>
                             ))}
-                            <Link
+                            {/* <Link
                                 href="/contact"
                                 className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 w-fit"
                             >
                                 Alexnnena Solutions LTD
-                            </Link>
+                            </Link> */}
                         </nav>
                     </div>
 
@@ -57,14 +57,22 @@ const Footer = () => {
                             Support
                         </p>
                         <div className='space-y-3'>
-                            <a href={`mailto:${alexSupport.email}`} className='flex items-center gap-2 text-sm text-muted-foreground'>
-                                <MapPin className="size-4" />
-                                {alexSupport.email}
+                            <div className="flex items-center justify-between">
+                                <a href={`mailto:${alexSupport.email}`} className='flex items-center gap-2 font-semibold text-sm text-muted-foreground'>
+                                <Mail className="size-4" />
+                                {alexSupport.email}, {alexSupport.email2}
                             </a>
-                            <a href={`tel:${alexSupport.phone}`} className='flex items-center gap-2 text-sm text-muted-foreground'>
+                            </div>                            
+                            <a href={alexSupport.location} className='flex items-center font-semibold gap-2 text-sm text-muted-foreground'>
                                 <MapPin className="size-4" />
-                                {alexSupport.phone}
+                                {alexSupport.location}
                             </a>
+                            <div className="flex items-center justify-between">
+                                <a href={`tel:${alexSupport.phone}`} className='flex font-semibold items-center gap-2 text-sm text-muted-foreground'>
+                                    <Phone className="size-4" />
+                                    {alexSupport.phone1}, {alexSupport.phone}
+                                </a>
+                            </div>
                             <a
                                 href={siteConfig.links.linkedin}
                                 target="_blank"

@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Hero from "@/components/sections/Hero";
 import AffilatedInstitutions from "@/components/sections/AffilatedInstitutions";
 import CorePillars from "@/components/sections/CorePillars";
-
+import LeadershipSection from "@/components/sections/LeadershipSection";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -14,6 +14,7 @@ export default function Home() {
       <Hero />
       <AffilatedInstitutions />
       <CorePillars />
+      <LeadershipSection />
     </main>
   );
 }

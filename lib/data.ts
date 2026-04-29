@@ -11,8 +11,10 @@ export const siteConfig = {
 };
 
 export const alexSupport = {
-    email: "Alexnnennasolutionnigltd@gmail.com",
+    email: "alexenebiattah@gmail.com",
+    email2:"topittrainer@gmail.com",
     location: "15, Malcolm Rd, East Croydon,United Kingdom",
+    phone1: "+44 7790467648",
     phone:"+234 806 096 9250",
 }
 
@@ -110,7 +112,7 @@ export const services = [
 export const contactContent = {
   heading: "Let’s Strengthen Your Institution",
   subheading: "Available for strategic consulting, speaking engagements, and research collaborations.",
-  email: "info@alexnnennasolutions.com", 
+  email: "alexenebiattah@gmail.com", 
   location: "Lagos, Nigeria",
   socials: [
     {
@@ -208,16 +210,16 @@ export const corePillars = [
     cta: "Resolve Conflicts"
   },
   {
-    id: "governance-policy",
-    title: "Governance & Policy Advisory",
-    icon: "Landmark", // Lucide: Landmark
-    description: "Strengthening the foundations of democratic institutions and public sector development through rigorous research.",
+    id: "ict training-certification",
+    title: "ICT Training & Certification",
+    icon: "Laptop", // Lucide: Laptop
+    description: "Empowering professionals with cutting-edge information and communication technology skills for enhanced productivity and innovation.",
     features: [
-      "Institutional Visibility Initiatives",
-      "Global Academic Partnership Strategy",
-      "Public Sector Policy Development",
-      "Governance System Audits"
+      "Digital Literacy Programs",
+      "Software Development Workshops",
+      "Data Analysis Training",
+      "Cybersecurity Certification",
     ],
-    cta: "Strengthen Governance"
+    cta: "Empowering Professionals"
   }
 ];
