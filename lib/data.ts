@@ -29,7 +29,7 @@ export const heroContent = {
     "Sustainable Growth.",
   ],
 
-  subheadline: "Led by Dr. Alexander Attah, we translate high-level research into actionable strategies for global institutions.",
+  subheadline: "Alexnnena solutions is a partnership between Dr. Alexander Attah and Nnena Attah.",
   
   primaryCTA: "Schedule a Consultation",
 };
