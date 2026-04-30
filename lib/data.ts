@@ -13,7 +13,7 @@ export const siteConfig = {
 export const alexSupport = {
     email: "alexenebiattah@gmail.com",
     email2:"topittrainer@gmail.com",
-    location: "15, Malcolm Rd, East Croydon,United Kingdom",
+    location: " 50 Pawson’s Road, Croydon. CR0 2QF. Surrey. U.K",
     phone1: "+44 7790467648",
     phone:"+234 806 096 9250",
 }
@@ -29,7 +29,7 @@ export const heroContent = {
     "Sustainable Growth.",
   ],
 
-  subheadline: "Alexnnena solutions is a partnership between Dr. Alexander Attah and Nnena Attah.",
+  subheadline: "Alexnnenna solutions is a partnership between Dr. Alexander Attah and Nnenna Attah.",
   
   primaryCTA: "Schedule a Consultation",
 };
@@ -113,7 +113,7 @@ export const contactContent = {
   heading: "Let’s Strengthen Your Institution",
   subheading: "Available for strategic consulting, speaking engagements, and research collaborations.",
   email: "alexenebiattah@gmail.com", 
-  location: "Lagos, Nigeria",
+  location: " 50 Pawson’s Road, Croydon. CR0 2QF. Surrey. U.K",
   socials: [
     {
       platform: "LinkedIn",

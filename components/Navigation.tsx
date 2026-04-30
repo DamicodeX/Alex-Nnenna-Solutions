@@ -23,7 +23,7 @@ const Navigation = () => {
                             priority
                         />
                         <span className="text-lg font-(family-name:--font-heading) font-black tracking-tight text-foreground sm:text-xl">
-                            Alexnnena Solutions
+                            Alexnnenna <span className="text-primary">Solutions</span>
                         </span>                        
                     </Link>
 
