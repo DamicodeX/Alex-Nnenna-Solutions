@@ -1,6 +1,6 @@
 export const siteConfig = {
-  name: "Alexnnena Solutions",
-  shortName: "Alexnnena Solutions",
+  name: "HR  Portal",
+  shortName: "HR Portal",
   founder: "People Operations Office",
   title: "HR Self-Service & Workplace Hub",
   description:

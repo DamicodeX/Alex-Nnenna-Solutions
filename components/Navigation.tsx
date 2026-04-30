@@ -1,17 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import { navItems } from "@/lib/constant";
-import { siteConfig } from "@/lib/data";
 import Link from "next/link";
 import ThemeToggle from "./ThemeToggle";
 import MobileNavigation from "./MobileNavigation";
 
 const Navigation = () => {
-  const portalWord = "Solutions";
-  const hasPortalWord = siteConfig.shortName.includes(portalWord);
-  const brandPrefix = hasPortalWord
-    ? siteConfig.shortName.replace(portalWord, "").trim()
-    : siteConfig.shortName;
+  const brandName = "Alexnnena Solutions";
 
   return (
     <nav
@@ -30,13 +25,7 @@ const Navigation = () => {
               priority
             />
             <span className="text-lg font-(family-name:--font-heading) font-black tracking-tight text-foreground sm:text-xl">
-              {brandPrefix}
-              {hasPortalWord && (
-                <>
-                  {" "}
-                  <span className="text-primary">{portalWord}</span>
-                </>
-              )}
+              {brandName}
             </span>
           </Link>
 
