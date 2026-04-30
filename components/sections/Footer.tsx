@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
-import LinkedinIcon from "@/components/icons/LinkedinIcon";
+import LinkedinIcon from "@/components/icons/LinkedInIcon";
 import { navItems } from "@/lib/constant";
 import { portalSupport, siteConfig } from "@/lib/data";
 import { Mail, MapPin, ArrowUpRight } from "lucide-react";

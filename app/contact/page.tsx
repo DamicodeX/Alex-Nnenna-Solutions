@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import LegacyPortalNotice from "@/components/sections/LegacyPortalNotice";
-import LinkedinIcon from "@/components/icons/LinkedinIcon";
+import LinkedinIcon from "@/components/icons/LinkedInIcon";
 import { contactContent, siteConfig } from "@/lib/data";
 import { Mail, MapPin, Send, ArrowUpRight } from "lucide-react";
 
