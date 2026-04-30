@@ -7,7 +7,7 @@ import ThemeToggle from "./ThemeToggle";
 import MobileNavigation from "./MobileNavigation";
 
 const Navigation = () => {
-  const portalWord = "Portal";
+  const portalWord = "Solutions";
   const hasPortalWord = siteConfig.shortName.includes(portalWord);
   const brandPrefix = hasPortalWord
     ? siteConfig.shortName.replace(portalWord, "").trim()

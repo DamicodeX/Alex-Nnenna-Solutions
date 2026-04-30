@@ -23,4 +23,9 @@ export const navItems = [
     name: "News & Events",
     href: "/news",
   },
+
+  // {
+  //   name:"Alexnnena Solutions LTD"
+  //   // href:"https://alex-nnenna-solutions.vercel.app/"
+  // }
 ];
