@@ -18,7 +18,7 @@ const LeadershipSection = () => {
       title: aboutContent2.coLeader.title,
       image: aboutContent2.coLeader.image,
       label: "Co-Leader",
-      summary:
+      summary:  
         "As the wife of Dr. Alexander Attah and a strategic partner in the organization's growth journey, she brings strong values-driven influence to leadership conversations and supports the long-term mission of institutional impact.",
     },
   ];
