@@ -3,7 +3,6 @@ import Link from 'next/link';
 import { navItems } from '@/lib/constant';
 import { alexSupport } from '@/lib/data';
 import { ArrowUpRight, Mail, MapPin, Phone } from 'lucide-react';
-// import LinkedinIcon from './icons/Linkedinicon';
 import LinkedinIcon from './icons/LinkedinIcon';
 import { Separator } from './ui/separator';
 
