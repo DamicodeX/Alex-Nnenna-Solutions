@@ -103,7 +103,7 @@ const Hero = () => {
                 </motion.h1>
 
                 <motion.p
-                    className="mt-6 max-w-2xl text-pretty text-base leading-7 text-muted-foreground sm:text-lg"
+                    className="mt-6 max-w-2xl text-pretty text-base leading-7 whitespace-nowrap text-muted-foreground sm:text-lg"
                     variants={{ hidden: { opacity: 0, y: 12 }, show: { opacity: 1, y: 0 } }}
                 >
                     {heroContent.subheadline}

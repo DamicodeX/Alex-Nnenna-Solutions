@@ -1,8 +1,11 @@
 "use client";
 
-import { Landmark, Laptop, ShieldCheck, Users } from "lucide-react";
+import {
+  Users, ShieldCheck, Building2, Cloud, Laptop,
+  Rocket, GraduationCap, ArrowRight
+} from "lucide-react";
 import { motion } from "motion/react";
-import { corePillars } from "@/lib/data";
+import { corePillars, nnennaServices } from "@/lib/data";
 import {
   Card,
   CardContent,
@@ -10,13 +13,18 @@ import {
   CardHeader,
   CardTitle,
 } from "../ui/card";
+import ServiceCard from "./ServiceCard";
+import React from "react";
 
-const iconMap = {
+const iconMap: Record<string, React.ElementType> = {
   Users,
   ShieldCheck,
-  Landmark,
+  Building2,
+  Cloud,
   Laptop,
-} as const;
+  Rocket,
+  GraduationCap,
+};;
 
 const CorePillars = () => {
   return (
@@ -37,20 +45,28 @@ const CorePillars = () => {
           </h2>
         </motion.div>
 
-        <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-          {corePillars.map((pillar) => {
-            const Icon = iconMap[pillar.icon as keyof typeof iconMap];
+        <div className="mt-8 grid md:grid-cols-2 lg:grid-cols-2 gap-6">
+          {nnennaServices.map((service, index) => {
+            // const Icon = iconMap[service.icon as keyof typeof iconMap];
 
             return (
               <motion.div
-                key={pillar.id}
+                key={service.title}
                 initial={{ opacity: 0, y: 18, scale: 0.98 }}
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
                 whileHover={{ y: -6, scale: 1.01 }}
               >
-                <Card className="h-full border-border/70 bg-card/80 shadow-sm">
+
+                <ServiceCard
+                  key={service.title}
+                  {...service}
+                  icon={iconMap[service.icon] ? React.createElement(iconMap[service.icon]) : null}
+                  index={index}
+
+                />
+                {/* <Card className="h-full border-border/70 bg-card/80 shadow-sm">
                 <CardHeader className="space-y-4 border-b border-border/60 pb-6">
                   <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-primary">
                     <Icon className="h-6 w-6" aria-hidden="true" />
@@ -75,7 +91,7 @@ const CorePillars = () => {
                     {pillar.cta}
                   </div>
                 </CardContent>
-                </Card>
+                </Card> */}
               </motion.div>
             );
           })}

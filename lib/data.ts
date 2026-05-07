@@ -44,6 +44,61 @@ export const aboutContent = {
   ],
 };
 
+// lib/data.ts
+
+// ... existing siteConfig, alexSupport, etc.
+
+export const nnennaServices = [
+  {
+    title: "Microsoft 365 & AI Adoption",
+    description: "Empowering teams to leverage Microsoft 365 and AI-powered productivity tools to work smarter and more collaboratively.",
+    icon: "Cloud",
+    tags: ["SharePoint", "Microsoft Teams", "Copilot AI"],
+    details: [
+      "SharePoint Online governance, site ownership, and collaboration frameworks",
+      "Copilot readiness and responsible AI usage for workplace productivity",
+      "Metadata, document management, and compliance-aligned file structures",
+      "Digital transformation strategies to accelerate user adoption",
+    ],
+  },
+  {
+    title: "Digital Skills & IT Training",
+    description: "High-impact, practical training designed to increase productivity, efficiency, and business outcomes.",
+    icon: "Laptop",
+    tags: ["IT Training", "Digital Literacy", "Workplace Efficiency"],
+    details: [
+      "Tailored sessions on desktop productivity tools and modern office apps",
+      "Engaging, confidence-building training for teams across all sectors",
+      "Scenario-based learning aligned with specific operational realities",
+      "Measurable improvements in digital adoption and technical capability",
+    ],
+  },
+  {
+    title: "SME & Start-Up Support",
+    description: "Results-driven guidance for entrepreneurs and founders to build strong foundations and scale with confidence.",
+    icon: "Rocket",
+    tags: ["Business Start-Up", "Process Systems", "Micro-Business Support"],
+    details: [
+      "Practical start-up skills training for sustainable business growth",
+      "Implementation of systems, processes, and productivity tools for SMEs",
+      "One-to-one support for individuals and micro-business owners",
+      "Strategies to reduce costs and improve operational efficiency",
+    ],
+  },
+  {
+    title: "L&D Project Management",
+    description: "Comprehensive training project management, from curriculum design to instructional development and delivery.",
+    icon: "GraduationCap",
+    tags: ["Instructional Design", "eLearning", "Change Management"],
+    details: [
+      "End-to-end curriculum design and bespoke course development",
+      "Creation of eLearning modules, video tutorials, and assessment tools",
+      "Prosci-aligned Change Management and internal readiness activities",
+      "Train the Trainer programs and knowledge transfer frameworks",
+    ],
+  },
+];
+
 export const services = [
   {
     title: "Human Capacity Development",

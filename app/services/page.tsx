@@ -4,13 +4,9 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 // import LegacyPortalNotice from "@/components/sections/LegacyPortalNotice";
 import ServiceCard from "@/components/sections/ServiceCard";
-import { services } from "@/lib/data";
-import {
-  Users,
-  ShieldCheck,
-  Building2,
-  ArrowRight,
-} from "lucide-react";
+import { nnennaServices, services } from "@/lib/data";
+import { Users, ShieldCheck, Building2, Cloud, Laptop, 
+  Rocket, GraduationCap, ArrowRight} from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -23,7 +19,11 @@ const iconMap: Record<string, React.ElementType> = {
   Users,
   ShieldCheck,
   Building2,
-};
+  Cloud,
+  Laptop,
+  Rocket,
+  GraduationCap,
+};;
 
 export default function ServicesPage() {
   return (
@@ -52,27 +52,51 @@ export default function ServicesPage() {
       /> */}
 
       {/* Services Grid */}
-      <section className="py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-6">
-            {services.map((service, index) => {
-              const IconComponent = iconMap[service.icon];
-              return (
-                <ServiceCard
-                  key={service.title}
-                  title={service.title}
-                  description={service.description}
-                  icon={
-                    IconComponent ? (
-                      <IconComponent className="size-5" />
-                    ) : null
-                  }
-                  tags={service.tags}
-                  details={service.details}
-                  index={index}
-                />
-              );
-            })}
+      {/* <section className="border-b border-border bg-muted/10">
+        <div className="max-w-7xl mx-auto px-4 py-20 text-center">
+          <h1 className="text-5xl font-bold tracking-tight">Our Solutions</h1>
+          <p className="mt-6 text-xl text-muted-foreground max-w-3xl mx-auto">
+            Strategic Excellence in Governance, Institutional Development, and Digital Transformation.
+          </p>
+        </div>
+      </section> */}
+
+      {/* Section 1: Strategic & Governance Consulting (Dr. Alexander) */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="mb-12">
+            <h2 className="text-3xl font-bold">Governance & Institutional Growth</h2>
+            <p className="text-muted-foreground">Expertise by Dr. Alexander Attah</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {services.map((service, index) => (
+              <ServiceCard 
+                key={service.title} 
+                {...service} 
+                icon={iconMap[service.icon] ? React.createElement(iconMap[service.icon]) : null}
+                index={index} 
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Section 2: Digital Transformation & IT Training (Nnenna Attah) */}
+      <section className="py-20 bg-muted/30">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="mb-12">
+            <h2 className="text-3xl font-bold">Digital Skills & IT Training</h2>
+            <p className="text-muted-foreground">Expertise by Mrs. Nnenna Attah</p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
+            {nnennaServices.map((service, index) => (
+              <ServiceCard 
+                key={service.title} 
+                {...service} 
+                icon={iconMap[service.icon] ? React.createElement(iconMap[service.icon]) : null}
+                index={index} 
+              />
+            ))}
           </div>
         </div>
       </section>
